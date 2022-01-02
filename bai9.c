@@ -23,4 +23,5 @@ arr_string s = alloc_arr_string(inputArray.size);
     }
     s.size = j;
     return s;
-}
+
+ 
