@@ -32,22 +32,25 @@ bool solution(int n)
 {
     int sum1 = 0;
     int sum2 = 0;
-    int count = 0, sum = 0;
-    int m = n;
+    int count = 0, sum = 0, res;
+    
     sizeNumber(n);
     for ( ; n != 0 ; ) {
         count++;
         n = n / 10;
     }
 
+    int m = n;
     for (int i = 0; i < count / 2; i++)
-    {
-        sum1 += m % 10;
+    {   
+        res = m % 10;
+        sum1 += res;
         m /= 10;
     }
     for (int i = 0; i < count / 2; i++)
     {
-        sum2 += m % 10;
+        res = m % 10;
+        sum2 += res;
         m /= 10;
     }
     return (sum1 == sum2) ? true : false;
@@ -73,7 +76,7 @@ bool solution(int n)
 //     if (tong % 2 != 0)
 //         return false;
 //     for (int i = 0; i < count / 2; i++)
-//     {
+//     {    
 //         sum1 += m % 10;
 //         m /= 10;
 //     }
