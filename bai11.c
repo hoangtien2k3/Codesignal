@@ -33,14 +33,13 @@ bool solution(int n)
     int sum1 = 0;
     int sum2 = 0;
     int count = 0, sum = 0, res;
-    
+    int m = n;
     sizeNumber(n);
     for ( ; n != 0 ; ) {
         count++;
         n = n / 10;
     }
 
-    int m = n;
     for (int i = 0; i < count / 2; i++)
     {   
         res = m % 10;
