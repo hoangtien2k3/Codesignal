@@ -46,7 +46,7 @@ bool solution(int n)
         sum1 += res;
         m /= 10;
     }
-    for (int i = 0; i < count / 2; i++)
+    for (int i = count / 2; i < count; i++)
     {
         res = m % 10;
         sum2 += res;
