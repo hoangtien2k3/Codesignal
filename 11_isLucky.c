@@ -1,21 +1,21 @@
-/* Đề bài 11:
+/*
     Ticket numbers usually consist of an even number of digits.
     A ticket number is considered lucky if the sum of the first half of
     the digits is equal to the sum of the second half.
+
+    Ex:
+    For n = 1230, the output should be
+    solution(n) = true;
+
+    For n = 239017, the output should be
+    solution(n) = false
+
 */
-// Yêu cầu : Given a ticket number n, determine if it's lucky or not.
-
-//VD: For n = 1230, the output should be
-//    solution(n) = true;
-//    For n = 239017, the output should be
-//    solution(n) = false
-
-// Vd: 1230 -> 12 30 -> count = 4; 3 == 3 -> true else false
 
 #define true 1
 #define false 0
 
-// Cách 1: 
+// Cách 1:
 bool sizeNumber (int n) {
     int count = 0, sum = 0;
     for (; n != 0;)

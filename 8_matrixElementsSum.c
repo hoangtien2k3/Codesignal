@@ -1,13 +1,16 @@
+/*
+    Given matrix, a rectangular matrix of integers, where each value represents the cost of the room,
+    your task is to return the total sum of all rooms that are suitable for the CodeBots
+    (ie: add up all the values that don't appear below a 0).
 
-Lesson 8: Given matrix, a rectangular matrix of integers, where each value represents the cost of the room,
-your task is to return the total sum of all rooms that are suitable for the CodeBots 
-(ie: add up all the values that don't appear below a 0).
+    Ex:
+    matrix= [[0, 1, 1, 2],
+             [0, 5, 0, 0],
+             [2, 0, 3, 3]]
 
- matrix = [[0, 1, 1, 2], 
-          [0, 5, 0, 0], 
-          [2, 0, 3, 3]]
-          
- code:
+
+*/
+
 int solution(arr_arr_integer matrix)
 {
     int cot = 0, hang = 0;

@@ -1,7 +1,9 @@
-//  Given two strings, find the number of common characters between them.
-/* 
+/*
+    Given two strings, find the number of common characters between them.
+
     For s1 = "aabcc" and s2 = "adcaa", the output should be
     solution(s1, s2) = 3
+    
 */
 
 #define Min(a, b) a <= b ? a : b
@@ -35,22 +37,3 @@ int solution(char *s1, char *s2)
 }
 
 
-// cách 2:
-// int solution(char *s1, char *s2)
-// {
-//     int count = 0;
-//     for (int i = 0; i < strlen(s1); i++)
-//     {
-//         for (int j = 0; j < strlen(s2); j++)
-//         {
-//             if (s1[i] == s2[j])
-//             {
-//                 s1[i] = '#';
-//                 s2[j] = '#';
-//                 count++;
-//                 break;
-//             }
-//         }
-//     }
-//     return count;
-// }
