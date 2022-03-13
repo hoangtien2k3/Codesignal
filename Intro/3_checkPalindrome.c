@@ -30,7 +30,7 @@ int main()
 {
     char a[5];
     char *s = &a[5];
-    scanf("%s", a);
+    scanf ("%s", a);
     printf("%d", solution(a));
     return 0;
 }
