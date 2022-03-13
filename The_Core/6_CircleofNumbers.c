@@ -18,6 +18,7 @@ int solution(int n, int firstNumber) {
     } else {
         return firstNumber-(n/2);
     }
+    // return (firstNumber + (n/2)) % n;
 }
 
 int main()  {
