@@ -25,5 +25,5 @@ arr_integer solution(arr_integer a) {
 }
 
 int main() {
-
+    
 }

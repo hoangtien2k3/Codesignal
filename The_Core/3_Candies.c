@@ -15,6 +15,7 @@
 #include<stdio.h> 
 
 int solution (int n, int m) {
+    // return m-(m%n);
     return (m/n)*n;
 }
 
@@ -24,3 +25,5 @@ int main() {
     printf ("%d", solution(n, m));
     return 0;
 }
+
+
