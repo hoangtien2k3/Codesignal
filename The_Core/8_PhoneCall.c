@@ -23,6 +23,8 @@ int solution(int min1, int min2_10, int min11, int s) {
     if (s >= min1) {
         sum1 = 1;
         s -= min1;
+    } else {
+        return 0;
     }
     if (s >= (min2_10 * 9)) {
         sum2 = 9;
@@ -33,7 +35,7 @@ int solution(int min1, int min2_10, int min11, int s) {
                 sum2 = i;
             }
         }
-        return sum1 + sum2 + sum3;
+        return sum1 + sum2;
     }
     sum3 = s / min11;
     return sum1 + sum2 + sum3;
