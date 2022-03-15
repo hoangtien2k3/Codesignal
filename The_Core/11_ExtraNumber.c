@@ -11,7 +11,7 @@
 
 int solution (int a, int b, int c) {
     return (a==b)?c:(a==c)?b:a;
-    // return a^b^c;
+    // return a^b^c; // cộng bit
 }
 
 int main() {
@@ -20,3 +20,4 @@ int main() {
     printf ("%d", solution(a, b, c));
     return 0;
 }
+
