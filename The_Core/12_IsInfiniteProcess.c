@@ -18,7 +18,11 @@
 
 bool solution(int a, int b)
 {
-    return (b<a)?true:((b-a)%2)?false:true;
+    if (b < a) return true;
+    if ((b-a)%2 == 0)
+        return false;
+    return true;
+    // return (b<a)?true:((b-a)%2)?false:true;
 }
 
 int main() {
