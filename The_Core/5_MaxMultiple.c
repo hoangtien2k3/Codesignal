@@ -12,12 +12,12 @@
 #include<stdio.h>
 
 int solution(int divisor, int bound) {
-    int i;
-    for (i = bound; i >= 0; i--) {
-        if (i % divisor == 0)
+    int n;
+    for (n = bound; n >= 0; n--) {
+        if (n % divisor == 0)
             break;
     }
-    return i;
+    return n;
 }
 
 int main() {

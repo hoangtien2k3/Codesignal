@@ -47,21 +47,6 @@ int solution(int value1, int weight1, int value2, int weight2, int maxW) {
     }
 }
 
-// int solution(int value1, int weight1, int value2, int weight2, int maxW) {
-//     int max = 0;
-//     if (weight1 + weight2 <= maxW) {
-//         return value1 + value2;
-//     } 
-//     if (weight1 <= maxW) {
-//         max = value1;
-//     }
-//     if (weight2 <= maxW && value2 > max) {
-//         max = value2;
-//     }
-//     return max;
-// }
-
-
 int main() {
     int value1, value2, weight1, weight2, maxW;
     scanf ("%d%d%d%d%d", &value1, &value2, &weight1, &weight2, &maxW);

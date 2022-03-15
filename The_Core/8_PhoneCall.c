@@ -32,7 +32,7 @@ int solution(int min1, int min2_10, int min11, int s) {
     } else {
         for (i = 1; i < s; i++) {
             if ((min2_10 * i) <= s) {
-                sum2 = i;
+                sum2 = i; 
             }
         }
         return sum1 + sum2;
