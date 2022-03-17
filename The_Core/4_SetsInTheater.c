@@ -14,4 +14,4 @@ int main() {
     scanf ("%d%d%d%d", &nCols, &nRows, &col, &row);
     printf ("%d", solution(nCols, nRows, col, row));
     return 0;
-}
+}c

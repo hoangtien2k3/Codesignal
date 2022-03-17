@@ -15,7 +15,3 @@ bool solution(bool young, bool beautiful, bool loved) {
     return (young && beautiful) != loved;
 }
 
-int main() {
-    bool young, beautiful, loved;
-    scanf ("")
-}
