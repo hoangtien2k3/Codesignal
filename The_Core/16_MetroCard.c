@@ -7,16 +7,18 @@
 #include<math.h>
 
 arr_integer solution(int lastNumberdays) {
-    arr_integer a;
-
+    arr_integer days;
     if (lastNumberdays == 28 || lastNumberdays == 30) {
-        a = alloc_arr_string(1);
-        *a.arr = 31;
+        arr_integer days = alloc_arr_integer(1);
+        days.arr[0] = 31;
+        return days;
     } else {
-        a = alloc_arr_string(3);
-        *a.arr = 28;
-        *(a.arr + 1) = 30;
-        *(a.arr + 1) = 31;
+        arr_integer days = alloc_arr_integer(3);
+        days.arr[0] = 28;
+        days.arr[1] = 30;
+        days.arr[2] = 31;
+        return days;
     }
-    return a;
+    return days;
 }
+
