@@ -6,6 +6,11 @@
 #include<stdio.h>
 #include<math.h>
 
+typedef struct {
+    
+}
+
+
 arr_integer solution(int lastNumberdays) {
     arr_integer days;
     if (lastNumberdays == 28 || lastNumberdays == 30) {
