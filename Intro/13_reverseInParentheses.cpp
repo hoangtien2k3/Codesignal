@@ -1,11 +1,11 @@
-#include <stdatomic.h>
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdbool.h>
-#include <stddef.h>
 #include <string.h>
-#include <stdint.h>
 #include <math.h>
+
+// Ex: foo(bar)baz => foorabbaz
 
 char *solution(char *s) {
     int len=strlen(s),i,j,k,mid,tempt;
@@ -51,7 +51,8 @@ char *solution(char *s) {
 }
 
 int main() {
-    char arr[] = "foo(bar)baz";
+    char arr[100] ;
+    gets(arr);
     printf ("%s", solution(arr));
     return 0;
 }
