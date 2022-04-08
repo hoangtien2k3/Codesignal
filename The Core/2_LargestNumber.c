@@ -10,7 +10,7 @@
 #include<math.h>
 
 int solution(int n) {
-    return pow(10, n)-1;
+    return pow(10, n) - 1;
 }
 
 int main() {
