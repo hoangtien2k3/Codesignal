@@ -12,6 +12,14 @@
 
 #include<stdio.h>
 #include<stdbool.h>
+#include<stdlib.h>
+#include<math.h>
+
+typedef struct 
+{
+    int size;
+    int arr[100];
+} arr_integer;
 
 bool solution(arr_integer s)
 {
@@ -41,6 +49,18 @@ bool solution(arr_integer s)
         }
     }
     return true;
+}
+
+int main() {
+    arr_integer array;
+    printf("Enter the size of array: ");
+    scanf("%d", &array.size);
+    printf ("Enter the elements array array: ");
+    for(int i=0; i < array.size; i++) {
+        scanf("%d", &array.arr[i]);
+    }
+    printf ("True and Fale: %d", solution(array));
+    return 0;
 }
 
 

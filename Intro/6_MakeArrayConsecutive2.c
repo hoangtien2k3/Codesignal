@@ -11,9 +11,22 @@
     + Ratiorg needs statues of sizes 4, 5 and 7.
 */
 
+#include<stdio.h>
+#include<math.h>
+#include<conio.h>
+#include<string.h>
+#include<stdlib.h>
+
+typedef struct
+{
+    int size;
+    int arr[100];
+} arr_integer;
+
+
 int solution(arr_integer statues)
 {
-    int i, j, temp;
+    int i, j, temp, sum = 0;
     for (int i = 0; i < statues.size - 1; i++)
     {
         for (j = i + 1; j < statues.size; j++)
@@ -26,7 +39,6 @@ int solution(arr_integer statues)
             }
         }
     }
-    int sum = 0;
     for (i = 0; i < statues.size - 1; i++)
     {
         sum += (statues.arr[i + 1] - statues.arr[i] - 1); // arr[1]-arr[0]-1
@@ -34,6 +46,22 @@ int solution(arr_integer statues)
     }
     return sum;
 }
+
+
+int main() {
+    arr_integer array;
+    printf ("Enter the size of array: ");
+    scanf("%d", &array.size);
+    printf ("Enter the elements in array: ");
+    for(int i=0; i < array.size; i++) {
+        scanf("%d", &array.arr[i]);
+    }
+    printf("Sum %d: ", solution(array));
+    return 0;
+}
+
+
+
 
 /*
 int solution(arr_integer s) {

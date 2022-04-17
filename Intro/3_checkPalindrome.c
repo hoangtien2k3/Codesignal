@@ -29,7 +29,7 @@ bool solution(char *s)
 int main()
 {
     char a[5];
-    char *s = &a[5];
+    char *s = &a[0];
     scanf ("%s", a);
     printf("%d", solution(a));
     return 0;

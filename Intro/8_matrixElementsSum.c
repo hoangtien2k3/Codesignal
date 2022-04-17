@@ -10,6 +10,16 @@
 
 
 */
+#include<stdio.h>
+#include<stdbool.h>
+#include<stdlib.h>
+#include<math.h>
+
+typedef struct 
+{
+    int size;
+    int *arr[100][100];
+} arr_arr_integer;
 
 int solution(arr_arr_integer matrix)
 {
@@ -34,3 +44,16 @@ int solution(arr_arr_integer matrix)
     }
     return tong;
 }
+
+int main() {
+    arr_arr_integer array;
+    printf("Enter the size of array: ");
+    scanf("%d", &array.size);
+    printf ("Enter the elements array array: ");
+    for(int i=0; i < array.size; i++) {
+        scanf("%d", &array.arr[i]);
+    }
+    printf ("Tong: %d", solution(array));
+    return 0;
+}
+

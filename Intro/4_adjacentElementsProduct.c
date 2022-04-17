@@ -16,16 +16,40 @@
 #include <stdlib.h>
 #include <string.h>
 
+typedef struct 
+{   
+    int size;
+    int arr[100];
+} arr_integer;
+
 int solution(arr_integer inputArray)
-{ 
+{
+    int arrLength = inputArray.size;
     int max = inputArray.arr[0] * inputArray.arr[1];
     for (int i = 1; i < inputArray.size - 1; i++)
     {
-        int tich = inputArray.arr[i] * inputArray.arr[i + 1]; // phần tử liền kề nhau
-        if (tich > max)
+        if (inputArray.arr[i] * inputArray.arr[i + 1] > max)
         {
-            max = tich;
+            max = inputArray.arr[i] * inputArray.arr[i + 1];
         }
     }
     return max;
 }
+
+
+int main()
+{
+    arr_integer array;
+    printf("Enter size of the array: ");
+    scanf("%d", &array.size);
+    printf("Enter the elements in array: ");
+    for (int i = 0; i < array.size; i++)
+    {
+        scanf("%d", &array.arr[i]);
+    }
+    printf("Max is %d", solution(array));
+    return 0;
+}
+
+
+
