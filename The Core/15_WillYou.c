@@ -15,3 +15,12 @@ bool solution(bool young, bool beautiful, bool loved) {
     return (young && beautiful) != loved;
 }
 
+int main() {
+    int young, beautiful, loved;
+    printf("Nhap vao young, beautiful, loved (1 or 0): ");
+    scanf("%d%d%d", young, beautiful, loved);
+    printf("%d" , solution(young, beautiful, loved));  
+
+    return 0;
+}
+

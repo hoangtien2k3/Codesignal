@@ -14,17 +14,26 @@
 #include<stdlib.h>
 
 typedef struct  {
-    int arr[3];
+    int size;
+    int *arr;
 } arr_integer;
 
-int solution(arr_integer arr) {
+int *alloc_arr_integer(int len) {
+    // arr_integer *a = {len, len > 0 ? malloc(sizeof(arr_integer) * len) : NULL};
+    int *a = (int*) malloc(len * sizeof(int));
+    return a;
+}
+
+int solution(arr_integer a) {
     int number = 0, powCounter, module = 0;
-    int length = sizeof(arr.arr) / sizeof(arr.arr[0]);
-    for (int i = 0; i < length; i++) {
+
+    a.arr = alloc_arr_integer(a.size);
+
+    for (int i = 0; i < a.size; i++) {
         powCounter = 8 * i;
-        while(arr.arr[i]) {
-            module = arr.arr[i] % 2;
-            arr.arr[i] = arr.arr[i] >> 1;
+        while((a.arr + i)) {
+            module = (int)(a.arr + i) % 2;
+            (int)(a.arr + i) = (int)(a.arr + i) >> 1;
             number = number + (module * (1 << powCounter));
             powCounter++;
         }
@@ -34,11 +43,10 @@ int solution(arr_integer arr) {
 
 int main() {
     arr_integer array;
-    int sizeArray;
     printf ("Enter the size the array: ");
-    scanf ("%d", &sizeArray);
+    scanf ("%d", &array.size);
     printf ("Enter the elements in array: \n");
-    for (int i=0; i < sizeArray; i++) {
+    for (int i=0; i < array.size; i++) {
         printf ("arr[%d] = ", i);
         scanf ("%d", &array.arr[i]);
     }
@@ -48,5 +56,7 @@ int main() {
 
     return 0;
 }
+
+
 
 
