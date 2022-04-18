@@ -25,9 +25,8 @@
 #include<conio.h>
 
 typedef struct {
-    int arr[3];
+    int *arr;
 } arr_integer;
-
 
 arr_integer *alloc_arr_integer(int len) {
     arr_integer *a = (arr_integer*) malloc(len * sizeof(arr_integer)); // cấp phát động và ép kiểu struct arr_integer
@@ -54,7 +53,6 @@ int main() {
     scanf("%d", &lastNumDays);
     
     arr_integer *pa = solution(lastNumDays);
-
     if (*(pa->arr + 0) == 31) {
         printf("%d", *(pa->arr + 0));
     } else {
