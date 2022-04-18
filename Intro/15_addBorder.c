@@ -22,6 +22,17 @@
 //     arr_string a = {len, len > 0 ? malloc(sizeof(type) * len) : NULL};
 //     return a;
 // }
+#include<stdio.h>
+#include<math.h>
+#include<stdlib.h>
+#include<string.h>
+#include<conio.h>
+
+typedef struct 
+{   
+    int size;
+    char arr[100];
+} arr_string;
 
 
 arr_string solution(arr_string picture) {
@@ -41,5 +52,17 @@ arr_string solution(arr_string picture) {
     
     return str_border;
 }
-    
+
+
+int main() {
+    arr_string str;
+    printf("Enter the size of string: ");
+    scanf("%d", &str.size);
+
+    printf("Enter string: ");
+    gets(str.arr);
+
+
+    return 0;
+}
 

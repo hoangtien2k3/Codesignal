@@ -6,7 +6,14 @@
     
 */
 
+#include<stdio.h>
+#include<math.h>
+#include<conio.h>
+#include<string.h>
+#include<stdlib.h>
+
 #define Min(a, b) a <= b ? a : b
+
 int solution(char *s1, char *s2)
 {
     int count = 0;
@@ -34,6 +41,20 @@ int solution(char *s1, char *s2)
         }
     }
     return count;
+}
+
+int main(){
+    char arr1[26];
+    char arr2[26];
+    printf("Enter the string1: ");
+    fflush(stdin);
+    gets(arr1);
+    printf("Enter the string2: ");
+    fflush(stdin);
+    gets(arr2);
+
+    printf("%d", solution(arr1, arr2));
+    return 0;
 }
 
 

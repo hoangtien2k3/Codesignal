@@ -11,6 +11,13 @@
     solution(n) = false
 
 */
+#include<stdio.h>
+#include<math.h>
+#include<conio.h>
+#include<string.h>
+#include<stdlib.h>
+#include<stdbool.h>
+
 
 #define true 1
 #define false 0
@@ -18,7 +25,7 @@
 // Cách 1:
 bool sizeNumber (int n) {
     int count = 0, sum = 0;
-    for (; n != 0;)
+    while(n != 0)
     {
         count++;
         sum += n % 10;
@@ -35,7 +42,7 @@ bool solution(int n)
     int count = 0, sum = 0, res;
     int m = n;
     sizeNumber(n);
-    for ( ; n != 0 ; ) {
+    while(n != 0) {
         count++;
         n = n / 10;
     }
@@ -56,36 +63,16 @@ bool solution(int n)
 }
 
 
+int main(){
+    int n;
+    printf("Enter the n: ");
+    scanf ("%d", &n);
 
-// Cách 2:
+    printf("%d", solution(n));
 
-// bool solution(int n)
-// {
-//     int sum1 = 0;
-//     int sum2 = 0;
-//     int count = 0, tong = 0;
-//     int m = n;
-//     for (; n != 0;)
-//     {
-//         count++;
-//         tong += n % 10;
-//         n /= 10;
-//     }
+    return 0;
+}
 
-//     if (tong % 2 != 0)
-//         return false;
-//     for (int i = 0; i < count / 2; i++)
-//     {    
-//         sum1 += m % 10;
-//         m /= 10;
-//     }
-//     for (int i = count / 2; i < count; i++)
-//     {
-//         sum2 += m % 10;
-//         m /= 10;
-//     }
-//     return (sum1 == sum2) ? true : false;
-// }
 
 
 

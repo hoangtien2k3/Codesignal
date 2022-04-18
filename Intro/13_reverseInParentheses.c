@@ -52,6 +52,7 @@ char *solution(char *s) {
 
 int main() {
     char arr[100] ;
+    printf("Enter the string: ");
     gets(arr);
     printf ("%s", solution(arr));
     return 0;

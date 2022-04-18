@@ -19,6 +19,19 @@
 //   return a;
 // } interchange sort
 
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+#include<string.h>
+#include<stdlib.h>
+
+typedef struct 
+{
+    int size;
+    int arr[100];
+} arr_integer;
+
+
 arr_integer solution(arr_integer arr)
 {
     for (int i = 0; i < arr.size - 1; i++)
@@ -36,5 +49,24 @@ arr_integer solution(arr_integer arr)
         }
     }
     return arr;
+}
+
+
+int main() {
+    arr_integer array;
+    printf("Enter the size of array: ");
+    scanf("%d", &array.size);
+    printf("Enter the elements array: ");
+    for(int i=0; i < array.size; i++) {
+        printf("arr[%d] = ", i);
+        scanf("%d", &array.arr[i]);
+    }
+
+    arr_integer p = solution(array);
+    for(int i=0; i < array.size; i++) {
+        printf("%d ", p.arr[i]);
+    }
+
+    return 0;
 }
 
