@@ -36,7 +36,7 @@ typedef struct
 
 
 arr_string solution(arr_string picture) {
-    int new_str_len = strlen(picture.arr[0])+2;
+    int new_str_len = strlen(picture.arr[0]) + 2;
     int new_str_size = picture.size + 2;
     arr_string str_border = alloc_arr_string(new_str_size);
 
