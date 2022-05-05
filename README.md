@@ -14,11 +14,8 @@ You can find here a collection of coding challenges from CodeSignal.
 
  - [**Arcade**](#Arcade)
     - [Intro](#Intro)
-
- - [**Challenges**](#Challenges)
-    - [Easy](#Easy)
-    - [Medium](#Medium)
-    - [Hard](#Hard)
+    - [The Core](#TheCore)
+    - [Databases](#Databases)
 
 # <u>Arcade</u>
 
@@ -45,17 +42,3 @@ You can find here a collection of coding challenges from CodeSignal.
 | 17    | [<a href="https://app.codesignal.com/arcade/intro/level-4/xvkRbxYkdHdHNCKjg">sortByHeight</a>]| Easy       | [<a href="https://github.com/hoangtien2k3/Codesignal/blob/main/Intro/12_SortbyHeight.c">Solution</a>] |
 
 
-# <u>Challenges</u>
-
-## Easy
-| #    | Challenge                                                    | Difficulty | Solution                                                     |
-| ---- | :----------------------------------------------------------- | :--------- | ------------------------------------------------------------ |
-| 1    | [<a href="https://app.codesignal.com/challenge/h7i7qTRoon4KSekYk">arraySumAdjacentDifference</a>]| Easy       | [Solution] |
-## Medium
-| #    | Challenge                                                    | Difficulty | Solution                                                     |
-| ---- | :----------------------------------------------------------- | :--------- | ------------------------------------------------------------ |
-| 1    | [<a href=""></a>]| Medium       | [Solution] |
-## Hard
-| #    | Challenge                                                    | Difficulty | Solution                                                     |
-| ---- | :----------------------------------------------------------- | :--------- | ------------------------------------------------------------ |
-| 1    | [<a href=""></a>]| Hard       | [Solution] |
