@@ -38,7 +38,11 @@ You can find here a collection of coding challenges from CodeSignal.
 | 10    | [<a href="https://app.codesignal.com/arcade/intro/level-3/JKKuHJknZNj4YGL32">commonCharacterCount</a>]| Easy       | [<a href="https://github.com/hoangtien2k3/Codesignal/blob/main/Intro/10_commonCharacterCount.c">Solution</a>] |
 | 11    | [<a href="https://app.codesignal.com/arcade/intro/level-3/3AdBC97QNuhF6RwsQ">isLucky</a>]| Easy       | [<a href="https://github.com/hoangtien2k3/Codesignal/blob/main/Intro/9_AllLongestStrings.c">Solution</a>] |
 | 12    | [<a href="https://app.codesignal.com/arcade/intro/level-3/D6qmdBL2NYz49XHwM">sortByHeight</a>]| Easy       | [<a href="https://github.com/hoangtien2k3/Codesignal/blob/main/Intro/12_SortbyHeight.c">Solution</a>] |
-| 13    | [<a href="">soon</a>]|   Medium    | [Solution] |
+| 13   | [<a href="https://app.codesignal.com/arcade/intro/level-3/9DgaPsE2a7M6M2Hu6">matrixElementsSum</a>]| Easy       | [<a href="https://github.com/hoangtien2k3/Codesignal/blob/main/Intro/13_reverseInParentheses.c">Solution</a>] |
+| 14   | [<a href="https://app.codesignal.com/arcade/intro/level-4/cC5QuL9fqvZjXJsW9">allLongestStrings</a>]| Easy       | [<a href="https://github.com/hoangtien2k3/Codesignal/blob/main/Intro/14_alternatingSums.c">Solution</a>] |
+| 15   | [<a href="https://app.codesignal.com/arcade/intro/level-4/ZCD7NQnED724bJtjN">commonCharacterCount</a>]| Easy       | [<a href="https://github.com/hoangtien2k3/Codesignal/blob/main/Intro/15_addBorder.c">Solution</a>] |
+| 16    | [<a href="https://app.codesignal.com/arcade/intro/level-4/xYXfzQmnhBvEKJwXP">isLucky</a>]| Easy       | [<a href="https://github.com/hoangtien2k3/Codesignal/blob/main/Intro/16_AreSimilar.c">Solution</a>] |
+| 17    | [<a href="https://app.codesignal.com/arcade/intro/level-4/xvkRbxYkdHdHNCKjg">sortByHeight</a>]| Easy       | [<a href="https://github.com/hoangtien2k3/Codesignal/blob/main/Intro/12_SortbyHeight.c">Solution</a>] |
 
 
 # <u>Challenges</u>
