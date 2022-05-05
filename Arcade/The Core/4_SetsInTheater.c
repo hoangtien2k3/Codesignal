@@ -15,3 +15,7 @@ int main() {
     printf ("%d", solution(nCols, nRows, col, row));
     return 0;
 }
+
+
+
+

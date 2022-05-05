@@ -50,23 +50,20 @@ bool solution(arr_integer a, arr_integer b) {
 
 int main() {
 
-    arr_integer array1;
-    arr_integer array2;
+    arr_integer arr1;
+    arr_integer arr2;
 
     printf("Enter the size of array a: ");
-    scanf("%d", &array1.size);
+    scanf("%d", &(arr1.size));
 
     printf("\nEnter the elements array a:\n");
-    for(int i=0; i < array1.size; i++) {
-        printf("array1[%d] = ", i);
-        scanf("%d", &array1.arr[i]);
+    for(int i=0; i < arr1.size; i++) {
+        printf("arr1[%d] = ", i);
+        scanf("%d", &(arr1.arr[i]));
     }
 
-    for(int i=0; i<array1.size; i++) {
-        scanf("%d", &array2.arr[i]);
-    }
 
-    if (solution(array1, array2)) {
+    if (solution(arr1, arr2)) {
         printf("true");
     } else {
         printf("false");

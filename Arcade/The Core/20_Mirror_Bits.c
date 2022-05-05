@@ -18,10 +18,12 @@
 
 int reverseBits(int n) {
     int rev = 0;
+    rev = rev << 1;
+
     while (n > 0) {
         rev = rev << 1;
         if (n & 1 == 1)
-            rev = rev ^ 1;
+            rev = rev ^ 1; 
         n = n >> 1;      
     }
     return rev;
@@ -30,6 +32,9 @@ int reverseBits(int n) {
 int main() {
     int n ;
     scanf("%d", &n);
+
     printf("%d", reverseBits(n));
+
+
     return 0;
 }

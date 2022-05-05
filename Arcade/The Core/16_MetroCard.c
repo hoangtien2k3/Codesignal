@@ -29,13 +29,12 @@ typedef struct {
 } arr_integer;
 
 arr_integer *alloc_arr_integer(int len) {
-    arr_integer *a = (arr_integer*) malloc(len * sizeof(arr_integer)); // cấp phát động và ép kiểu struct arr_integer
-    return a;
+    arr_integer *a = (arr_integer*) malloc(len * sizeof(arr_integer)); 
 }
 
-arr_integer *solution(int lastNumDays) { // arr_integer *solution(truyền parameter) || mục đích để return về con trỏ
+arr_integer *solution(int lastNumDays) { 
     arr_integer *a; 
-    if (lastNumDays == 28 || lastNumDays == 30)  {
+    if (lastNumDays == 28 || lastNumDays == 30) {
         a = alloc_arr_integer(1);
         *(a->arr) = 31;
     } else {
@@ -44,14 +43,14 @@ arr_integer *solution(int lastNumDays) { // arr_integer *solution(truyền param
         *(a->arr + 1) = 30;
         *(a->arr + 2) = 31;
     }
-    return a; // return về con trỏ kiểu arr_integer
+    return a; 
 }
 
 int main() {
     int lastNumDays;
     printf("Nhap vao lastNumDays: ");
     scanf("%d", &lastNumDays);
-    
+
     arr_integer *pa = solution(lastNumDays);
     if (*(pa->arr + 0) == 31) {
         printf("%d", *(pa->arr + 0));
@@ -60,7 +59,7 @@ int main() {
             printf("%d ", *(pa->arr + i));
         }
     }
-
+    
     return 0;
 }
 
