@@ -13,8 +13,9 @@
     Thus, the answer is 23 = 8.
 
 */
+
 /*
-You have to get rid of the rightmost 0
+You have to get rid of the rightmost 0: loại bỏ số 0 cuối cùng và thay bằng số 1
 To fill in the rightmost 0 with 1 using x | (x + 1)
     10111100  (x)
 |   10111101  (x + 1)
@@ -54,4 +55,5 @@ int main() {
     std::cin >> n;
     std::cout << solution(n);
     return 0;
+
 }
