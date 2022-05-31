@@ -11,24 +11,34 @@
 #include<iostream>
 #include<vector>
 #include<bits/stdc++.h>
-
 using namespace std;
 
-string DaoNguoc(string s) {
-    int length = s.length();
-    string temp;
-    for (int i = length - 1; i >=0; i--) {
-        temp.push_back(s[i]);
+bool solution(string str)
+{
+    vector<char> list;
+    for (int i = 0; i < str.length(); i++) {
+        auto pos = find(list.begin(), list.end(), str[i]);
+        if (pos != list.end()) {
+            auto posi = find(list.begin(), list.end(), str[i]);
+            list.erase(posi);
+        }else
+            list.push_back(str[i]);
     }
-    return temp;
+    if (str.length() %2 == 0 && list.empty() || (str.length() % 2 == 1 && list.size() == 1)) 
+        return true;
+    else
+        return false;
 }
  
 int main()
 {
-    string s;
-    cin.clear();
-    getline(std::cin, s);
-    cout << "Chuoi sau khi dao nguoc la: ";
-    cout << DaoNguoc(s);
+    string str;
+    getline(cin, str);
+    solution(str);
+    if (solution(str)) {
+        cout << "String Palindrome!!!";
+    } else {
+        cout << "String No Palindrome!!!";
+    }
     return 0;
 }
