@@ -13,13 +13,19 @@ Example:
 using namespace std;
     
 int solution(vector<int> inputArray) {
-    int max = abs(inputArray[0] - inputArray[1]);
-    for(int i=0; i < inputArray.size() - 1; i++) {
-        if (abs(inputArray[i] - inputArray[i + 1]) > max) {
-            max = abs(inputArray[i] - inputArray[i + 1]);
-        }
+    // int max_elemets = abs(inputArray[0] - inputArray[1]);
+    // for(int i=0; i < inputArray.size() - 1; i++) {
+    //     if (abs(inputArray[i] - inputArray[i + 1]) > max) {
+    //         max_elements = abs(inputArray[i] - inputArray[i + 1]);
+    //     }
+    // }
+    
+    int max_elements = 0;
+    for(int i=0; i<inputArray.size() - 1; i++) {
+        max_elements = max(max_elements, abs(inputArray[i + 1] - inputArray[i]));
     }
-    return max;
+        
+    return max_elements;
 }
 
 int main() {
