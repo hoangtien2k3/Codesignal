@@ -24,7 +24,7 @@ bool solution(string str)
         }else
             list.push_back(str[i]);
     }
-    if (str.length() %2 == 0 && list.empty() || (str.length() % 2 == 1 && list.size() == 1)) 
+    if ((str.length() % 2 == 0 && list.empty() || (str.length() % 2 == 1 && list.size() == 1)) 
         return true;
     else
         return false;
