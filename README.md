@@ -4,9 +4,33 @@
 
 <p align="center">
     <a href="https://app.codesignal.com/profile/pogryziony" target="_blank">
-        <img height=150 src="https://user-images.githubusercontent.com/91842746/164986886-541cc5d3-a276-4d1e-b3eb-d1b4479a99f2.jpg">
+        <img height=300 src="https://user-images.githubusercontent.com/91842746/164986886-541cc5d3-a276-4d1e-b3eb-d1b4479a99f2.jpg">
     </a>
 
+## :) Contribute to
+
+<!-- FOLLOWER-LIST:START -->
+<table>
+  <tr>
+		
+<td align="center">
+     <a href="https://github.com/hoangtien2k3">
+       <img src="https://avatars.githubusercontent.com/u/91842746?v=4" width="100px;" alt="hoangtien2k3"/>
+     </a>
+     <br />
+     <a href="https://github.com/hoangtien2k3">hoangtien2k3</a>
+  </td>
+		
+<td align="center">
+     <a href="https://github.com/hoangchungk53qx1">
+       <img src="https://avatars.githubusercontent.com/u/98534341?v=4" width="100px;" alt="hoangchungk53qx1"/>
+     </a>
+     <br />
+     <a href="https://github.com/hoangchungk53qx1">hoangchungk53qx1</a>
+  </td>
+		  </tr>
+</table>
+<!-- FOLLOWER-LIST:END -->
 
 You can find here a collection of coding challenges from CodeSignal.
 
@@ -41,30 +65,4 @@ You can find here a collection of coding challenges from CodeSignal.
 | 16    | [<a href="https://app.codesignal.com/arcade/intro/level-4/xYXfzQmnhBvEKJwXP">isLucky</a>]| Easy       | [<a href="https://github.com/hoangtien2k3/Codesignal/blob/main/Intro/16_AreSimilar.c">Solution</a>] |
 | 17    | [<a href="https://app.codesignal.com/arcade/intro/level-4/xvkRbxYkdHdHNCKjg">sortByHeight</a>]| Easy       | [<a href="https://github.com/hoangtien2k3/Codesignal/blob/main/Intro/12_SortbyHeight.c">Solution</a>] |
 
-
-
-## :) Contribute to
-
-<!-- FOLLOWER-LIST:START -->
-<table>
-  <tr>
-		
-<td align="center">
-     <a href="https://github.com/hoangtien2k3">
-       <img src="https://avatars.githubusercontent.com/u/91842746?v=4" width="100px;" alt="hoangtien2k3"/>
-     </a>
-     <br />
-     <a href="https://github.com/hoangtien2k3">hoangtien2k3</a>
-  </td>
-		
-<td align="center">
-     <a href="https://github.com/hoangchungk53qx1">
-       <img src="https://avatars.githubusercontent.com/u/98534341?v=4" width="100px;" alt="hoangchungk53qx1"/>
-     </a>
-     <br />
-     <a href="https://github.com/hoangchungk53qx1">hoangchungk53qx1</a>
-  </td>
-		  </tr>
-</table>
-<!-- FOLLOWER-LIST:END -->
 
